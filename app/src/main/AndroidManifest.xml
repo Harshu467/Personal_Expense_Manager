@@ -12,6 +12,39 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
+            android:name=".searchdata2"
+            android:exported="false" />
+        <activity
+            android:name=".searchdata"
+            android:exported="false" />
+        <activity
+            android:name=".resetdata"
+            android:exported="false" />
+        <activity
+            android:name=".resetpassword"
+            android:exported="false" />
+        <activity
+            android:name=".Profile"
+            android:exported="false" />
+        <activity
+            android:name=".NextIncome"
+            android:exported="false" />
+        <activity
+            android:name=".IncomeFragment"
+            android:exported="false" />
+        <activity
+            android:name=".income2"
+            android:exported="false" />
+        <activity
+            android:name=".inc_emi"
+            android:exported="false" />
+        <activity
+            android:name=".home_screen"
+            android:exported="false" />
+        <activity
+            android:name=".first_home_page"
+            android:exported="false" />
+        <activity
             android:name=".Finalinc"
             android:exported="false" />
         <activity

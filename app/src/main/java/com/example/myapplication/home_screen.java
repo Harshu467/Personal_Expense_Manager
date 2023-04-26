@@ -35,9 +35,9 @@ public class home_screen extends AppCompatActivity {
     private EditText mPass;
     private CheckBox remember;
 
-    private ProgressDialog mDialog;
+private ProgressDialog mDialog;
 
-    private FirebaseAuth mAuth;
+private FirebaseAuth mAuth;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -522,27 +522,27 @@ public class DashboardFragment extends Fragment {
 
         View mIncomeView;
 
-        public IncomeViewHolder(View itemView)
-        {
-            super(itemView);
-            mIncomeView=itemView;
-        }
-        public void setIncomeType(String type)
-        {
-            TextView mtype=mIncomeView.findViewById(R.id.type_Income_ds);
-            mtype.setText(type);
-        }
-        public void setIncomeAmount(int amount)
-        {
-            TextView mAmount=mIncomeView.findViewById(R.id.amount_Income_ds);
-            String strAmount= String.valueOf(amount);
-            mAmount.setText(strAmount);
-        }
-        public void setIncomeDate(String date)
-        {
-            TextView mDate=mIncomeView.findViewById(R.id.date_Income_ds);
-            mDate.setText(date);
-        }
+                public IncomeViewHolder(View itemView)
+                {
+                    super(itemView);
+                    mIncomeView=itemView;
+                }
+                public void setIncomeType(String type)
+                {
+                    TextView mtype=mIncomeView.findViewById(R.id.type_Income_ds);
+                    mtype.setText(type);
+                }
+                public void setIncomeAmount(int amount)
+                {
+                    TextView mAmount=mIncomeView.findViewById(R.id.amount_Income_ds);
+                    String strAmount= String.valueOf(amount);
+                    mAmount.setText(strAmount);
+                }
+                public void setIncomeDate(String date)
+                {
+                    TextView mDate=mIncomeView.findViewById(R.id.date_Income_ds);
+                    mDate.setText(date);
+                }
     }
 
     //For expense data

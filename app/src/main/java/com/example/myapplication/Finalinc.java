@@ -88,5 +88,8 @@ public class Finalinc extends AppCompatActivity {
         }
         T7.setText("Total Tax: "+tax );
 
+
+
+
     }
 }

@@ -204,42 +204,42 @@ public class first_home_page extends AppCompatActivity implements NavigationView
                 Intent intent3=new Intent(getApplicationContext(),inc_emi.class);
                 startActivity(intent3);
                 break;
-
-            case R.id.calculator:
-                int d=0;
-                if(items.size()>=1)
-                {
-                    int j=0;
-                    for(j=0;j<items.size();j++){
-                        String AppName = (String) items.get(j).get("appName");
-                        if(AppName.matches("Calculator"))
-                        {
-                            d=j;
-                            break;
-                        }
-                    }
-                    String packageName = (String) items.get(d).get("packageName");
-
-                    Intent i = pm.getLaunchIntentForPackage(packageName);
-                    if (i != null)
-                    {
-                        Toast.makeText(getApplicationContext(),"Opening Calculator..",Toast.LENGTH_SHORT).show();
-                        startActivity(i);
-                    }
-                    else
-                    {
-                        Intent intent=new Intent(Intent.ACTION_VIEW);
-                        intent.setData(Uri.parse("https://play.google.com/store/apps/details?id=com.sec.android.app.popupcalculator"));
-                        startActivity(intent);
-                    }
-                }
-                else
-                {
-                    Intent intent1=new Intent(Intent.ACTION_VIEW);
-                    intent1.setData(Uri.parse("https://play.google.com/store/apps/details?id=com.sec.android.app.popupcalculator"));
-                    startActivity(intent1);
-                }
-                break;
+//
+//            case R.id.calculator:
+//                int d=0;
+//                if(items.size()>=1)
+//                {
+//                    int j=0;
+//                    for(j=0;j<items.size();j++){
+//                        String AppName = (String) items.get(j).get("appName");
+//                        if(AppName.matches("Calculator"))
+//                        {
+//                            d=j;
+//                            break;
+//                        }
+//                    }
+//                    String packageName = (String) items.get(d).get("packageName");
+//
+//                    Intent i = pm.getLaunchIntentForPackage(packageName);
+//                    if (i != null)
+//                    {
+//                        Toast.makeText(getApplicationContext(),"Opening Calculator..",Toast.LENGTH_SHORT).show();
+//                        startActivity(i);
+//                    }
+//                    else
+//                    {
+//                        Intent intent=new Intent(Intent.ACTION_VIEW);
+//                        intent.setData(Uri.parse("https://play.google.com/store/apps/details?id=com.sec.android.app.popupcalculator"));
+//                        startActivity(intent);
+//                    }
+//                }
+//                else
+//                {
+//                    Intent intent1=new Intent(Intent.ACTION_VIEW);
+//                    intent1.setData(Uri.parse("https://play.google.com/store/apps/details?id=com.sec.android.app.popupcalculator"));
+//                    startActivity(intent1);
+//                }
+//                break;
 
             case R.id.feedback:
                 Intent intent2=new Intent(getApplicationContext(),feedback.class);

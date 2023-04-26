@@ -35,11 +35,11 @@
         android:icon="@drawable/ic_inc">
 
     </item>
-    <item android:id="@+id/calculator"
-        android:title="Calculator"
-        android:icon="@drawable/ic__calculator">
+<!--    <item android:id="@+id/calculator"-->
+<!--        android:title="Calculator"-->
+<!--        android:icon="@drawable/ic__calculator">-->
 
-    </item>
+<!--    </item>-->
     <item android:id="@+id/feedback"
         android:title="Rate us"
         android:icon="@drawable/ic_star_rate">

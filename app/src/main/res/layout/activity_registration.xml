@@ -39,16 +39,16 @@
                 android:layout_marginTop="-45dp"
                 >
 
-                <EditText
-                    android:id="@+id/email_reg"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:layout_marginTop="50dp"
-                    android:hint="Email"
-                    android:textColorHint="@android:color/black"
-                    android:textColor="@android:color/black"
-                    />
+            <EditText
+                android:id="@+id/email_reg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="50dp"
+                android:hint="Email"
+                android:textColorHint="@android:color/black"
+                android:textColor="@android:color/black"
+                 />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -63,15 +63,15 @@
                 app:layout_constraintTop_toTopOf="parent"
                 >
 
-                <EditText
-                    android:id="@+id/password_reg"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:hint="Create Password"
-                    android:inputType="textPassword"
-                    android:textColor="@android:color/black"
-                    android:textColorHint="@android:color/black" />
+            <EditText
+                android:id="@+id/password_reg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="Create Password"
+                android:inputType="textPassword"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black" />
 
             </com.google.android.material.textfield.TextInputLayout>
 

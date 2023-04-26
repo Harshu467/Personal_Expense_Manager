@@ -1,25 +1,32 @@
 package com.example.myapplication.Model;
-public class Data {
 
+//import androidx.recyclerview.widget.RecyclerView;
+
+public class Data {
+    //extends RecyclerView.ViewHolder
     private int amount;
     private String type;
     private String note;
     private String id;
 
-    public Data(int amount,String type,String note,String id)
+    public Data(int amount, String type, String note, String id, String date)
     {
-        this.amount=amount;
-        this.type=type;
-        this.note=note;
-        this.id=id;
+
+        this.amount = amount;
+        this.type = type;
+        this.note = note;
+        this.id = id;
+        this.date = date;
     }
+
+
 
     private String date;
-    public Data(){};
+    public Data(){}
 
-    public int getAmount() {
-        return amount;
-    }
+
+
+    public int getAmount(){return amount;}
 
     public void setAmount(int amount) {
         this.amount = amount;

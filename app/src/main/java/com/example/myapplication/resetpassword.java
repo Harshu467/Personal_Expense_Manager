@@ -38,8 +38,8 @@ public class resetpassword extends AppCompatActivity {
 
                 if(useremail.equals(""))
                 {
-                    passwordEmail.setError("Email Required...",null);
-                    return;
+                  passwordEmail.setError("Email Required...",null);
+                  return;
                 }
                 else
                 {

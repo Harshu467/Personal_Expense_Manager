@@ -82,26 +82,26 @@ public class Registration extends AppCompatActivity {
                 mAuth.createUserWithEmailAndPassword(email,pass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
-                        if(task.isSuccessful()){
-                            mDialog.dismiss();
-                            sendEmailVerification();
-                            mEmail=findViewById(R.id.email_reg);
-                            String email=mEmail.getText().toString().trim();
-                            FirebaseUser mUser=mAuth.getCurrentUser();
-                            if(mAuth!=null) {
-                                String uid = mUser.getUid();
-                                DatabaseReference myRootRef = FirebaseDatabase.getInstance().getReference().child("UserInfo").child(uid);
-                                DatabaseReference userNameRef =  myRootRef.child("Email");
-                                userNameRef.setValue(email);
+                            if(task.isSuccessful()){
+                                mDialog.dismiss();
+                                sendEmailVerification();
+                                mEmail=findViewById(R.id.email_reg);
+                                String email=mEmail.getText().toString().trim();
+                                FirebaseUser mUser=mAuth.getCurrentUser();
+                                if(mAuth!=null) {
+                                    String uid = mUser.getUid();
+                                    DatabaseReference myRootRef = FirebaseDatabase.getInstance().getReference().child("UserInfo").child(uid);
+                                    DatabaseReference userNameRef =  myRootRef.child("Email");
+                                    userNameRef.setValue(email);
+                                }
+                            }
+                            else {
+                                mDialog.dismiss();
+
+                                Toast.makeText(getApplicationContext(),"Registration failed..",Toast.LENGTH_SHORT).show();
+
                             }
                         }
-                        else {
-                            mDialog.dismiss();
-
-                            Toast.makeText(getApplicationContext(),"Registration failed..",Toast.LENGTH_SHORT).show();
-
-                        }
-                    }
 
                 });
             }

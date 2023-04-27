@@ -251,25 +251,25 @@ public class first_home_page extends AppCompatActivity implements NavigationView
                 startActivity(intent4);
                 break;
 
-            case R.id.logout:
-                AlertDialog.Builder builder=new AlertDialog.Builder(first_home_page.this);
-                builder.setTitle("Logout");
-                builder.setMessage("Do you really want to Logout?");
-                builder.setPositiveButton("YES", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        finishAffinity();
-                        startActivity(new Intent(getApplicationContext(),home_screen.class));
-                    }
-                });
-                builder.setNegativeButton("NO", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        dialog.dismiss();
-                    }
-                });
-                builder.show();
-                break;
+//            case R.id.logout:
+//                AlertDialog.Builder builder=new AlertDialog.Builder(first_home_page.this);
+//                builder.setTitle("Logout");
+//                builder.setMessage("Do you really want to Logout?");
+//                builder.setPositiveButton("YES", new DialogInterface.OnClickListener() {
+//                    @Override
+//                    public void onClick(DialogInterface dialog, int which) {
+//                        finishAffinity();
+//                        startActivity(new Intent(getApplicationContext(),home_screen.class));
+//                    }
+//                });
+//                builder.setNegativeButton("NO", new DialogInterface.OnClickListener() {
+//                    @Override
+//                    public void onClick(DialogInterface dialog, int which) {
+//                        dialog.dismiss();
+//                    }
+//                });
+//                builder.show();
+//                break;
         }
         if(fragment!=null){
             FragmentTransaction ft=getSupportFragmentManager().beginTransaction();

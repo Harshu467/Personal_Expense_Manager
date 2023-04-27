@@ -98,18 +98,6 @@ public class SettingsActivity extends AppCompatActivity {
                         .setNegativeButton(android.R.string.no, null)
                         .create().show();
             }
-            else if (preference.getTitle() == getResources().getString(R.string.developer_label)) {
-                String url = c.getResources().getString(R.string.developer_url);
-                Intent i = new Intent(Intent.ACTION_VIEW);
-                i.setData(Uri.parse(url));
-                startActivity(i);
-            }
-            else if (preference.getTitle() == getResources().getString(R.string.send_feedback_label)) {
-                String url = c.getResources().getString(R.string.send_feedback_url);
-                Intent i = new Intent(Intent.ACTION_VIEW);
-                i.setData(Uri.parse(url));
-                startActivity(i);
-            }
             return super.onPreferenceTreeClick(preference);
         }
     }

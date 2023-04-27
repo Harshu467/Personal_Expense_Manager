@@ -178,27 +178,27 @@ public class first_home_page extends AppCompatActivity implements NavigationView
                 startActivity(profile_intent);
                 break;
 
-            case R.id.dashboard:
-                fragment=new DashboardFragment();
-                break;
+//            case R.id.dashboard:
+//                fragment=new DashboardFragment();
+//                break;
+//
+//            case R.id.income:
+//                fragment=new IncomeFragment();
+//                break;
 
-            case R.id.income:
-                fragment=new IncomeFragment();
-                break;
+//            case R.id.search_income:
+//                Intent intent_inc=new Intent(getApplicationContext(),searchdata.class);
+//                startActivity(intent_inc);
+//                break;
 
-            case R.id.search_income:
-                Intent intent_inc=new Intent(getApplicationContext(),searchdata.class);
-                startActivity(intent_inc);
-                break;
+//            case R.id.expense:
+//                fragment=new ExpenseFragment();
+//                break;
 
-            case R.id.expense:
-                fragment=new ExpenseFragment();
-                break;
-
-            case R.id.search_expense:
-                Intent intent_exp=new Intent(getApplicationContext(),searchdata2.class);
-                startActivity(intent_exp);
-                break;
+//            case R.id.search_expense:
+//                Intent intent_exp=new Intent(getApplicationContext(),searchdata2.class);
+//                startActivity(intent_exp);
+//                break;
 
             case R.id.income_tax_emi:
                 Intent intent3=new Intent(getApplicationContext(),inc_emi.class);
@@ -241,15 +241,15 @@ public class first_home_page extends AppCompatActivity implements NavigationView
 //                }
 //                break;
 
-            case R.id.feedback:
-                Intent intent2=new Intent(getApplicationContext(),feedback.class);
-                startActivity(intent2);
-                break;
+//            case R.id.feedback:
+//                Intent intent2=new Intent(getApplicationContext(),feedback.class);
+//                startActivity(intent2);
+//                break;
 
-            case R.id.about:
-                Intent intent4=new Intent(getApplicationContext(),about.class);
-                startActivity(intent4);
-                break;
+//            case R.id.about:
+//                Intent intent4=new Intent(getApplicationContext(),about.class);
+//                startActivity(intent4);
+//                break;
 
 //            case R.id.logout:
 //                AlertDialog.Builder builder=new AlertDialog.Builder(first_home_page.this);

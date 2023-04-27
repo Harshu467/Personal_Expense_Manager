@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ListPreference
+        app:key="@string/dark_mode_pref_key"
+        app:title="@string/dark_mode_pref_label"
+        app:defaultValue="@string/dark_mode_default_value"
+        app:entries="@array/dark_mode_pref_entries"
+        app:entryValues="@array/dark_mode_pref_values"
+        app:useSimpleSummaryProvider="true"/>
+
+    <PreferenceCategory
+        app:icon="@drawable/ic_person"
+        app:title="@string/user_pref_category">
+        <EditTextPreference
+            app:key="@string/user_name_pref_key"
+            app:title="@string/user_name_pref_label"
+            app:useSimpleSummaryProvider="true"/>
+
+        <EditTextPreference
+            app:key="@string/business_name_pref_key"
+            app:title="@string/business_name_pref_label"
+            app:useSimpleSummaryProvider="true"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:icon="@drawable/ic_money"
+        app:title="@string/currency_pref_category">
+        <ListPreference
+            app:key="@string/currency_format_pref_key"
+            app:title="@string/currency_format_pref_label"
+            app:defaultValue="@string/currency_format_default_value"
+            app:entries="@array/currency_format_pref_entries"
+            app:entryValues="@array/currency_format_pref_values"
+            app:useSimpleSummaryProvider="true"/>
+
+        <ListPreference
+            app:key="@string/currency_symbol_pref_key"
+            app:title="@string/currency_symbol_pref_label"
+            app:defaultValue="@string/currency_symbol_default_value"
+            app:entries="@array/currency_symbol_pref_entries"
+            app:entryValues="@array/currency_symbol_pref_values"
+            app:useSimpleSummaryProvider="true"/>
+
+        <ListPreference
+            app:key="@string/currency_symbol_position_pref_key"
+            app:title="@string/currency_symbol_position_pref_label"
+            app:defaultValue="@string/currency_symbol_position_default_value"
+            app:entries="@array/currency_symbol_position_pref_entries"
+            app:entryValues="@array/currency_symbol_position_pref_values"
+            app:useSimpleSummaryProvider="true"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:icon="@drawable/ic_default"
+        app:title="@string/defaults_pref_category">
+        <CheckBoxPreference
+            app:key="@string/default_date_as_today_pref_key"
+            app:title="@string/default_date_as_today_pref_label"
+            android:defaultValue="false">
+        </CheckBoxPreference>
+
+        <ListPreference
+            app:key="@string/default_date_range_pref_key"
+            app:title="@string/default_date_range_pref_label"
+            app:defaultValue="@string/default_date_range_default_values"
+            app:entries="@array/default_date_range_pref_entries"
+            app:entryValues="@array/default_date_range_pref_values"
+            android:dependency="@string/default_date_as_today_pref_key"
+            app:useSimpleSummaryProvider="true"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:icon="@drawable/ic_calendar"
+        app:title="@string/date_pref_category">
+        <ListPreference
+            app:key="@string/date_format_pref_key"
+            app:title="@string/date_format_pref_label"
+            app:defaultValue="@string/date_format_default_value"
+            app:entries="@array/date_format_pref_entries"
+            app:entryValues="@array/date_format_pref_values"
+            app:useSimpleSummaryProvider="true"/>
+        <ListPreference
+            app:key="@string/date_separator_pref_key"
+            app:title="@string/date_separator_pref_label"
+            app:defaultValue="@string/date_separator_default_value"
+            app:entries="@array/date_separator_pref_entries"
+            app:entryValues="@array/date_separator_pref_values"
+            app:useSimpleSummaryProvider="true"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:icon="@drawable/ic_info"
+        app:title="@string/info_pref_category">
+
+        <Preference
+            app:title="@string/build_version_label"
+            app:summary="@string/build_version"/>
+
+        <Preference
+            app:title="@string/developer_label"
+            app:summary="@string/developer_github_label"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:icon="@drawable/ic_warning"
+        app:title="@string/action_pref_category">
+        <Preference
+            app:title="@string/send_feedback_label"
+            app:summary="@string/send_feedback_summary"/>
+        <Preference
+            app:title="@string/reset_books"/>
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

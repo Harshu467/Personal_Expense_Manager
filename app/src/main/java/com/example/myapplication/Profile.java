@@ -39,7 +39,7 @@ public class Profile extends AppCompatActivity {
     private FirebaseAuth mAuth;
 
     Button changepass;
-    Button deleteaccount;
+//    Button deleteaccount;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,7 +64,7 @@ public class Profile extends AppCompatActivity {
         mUserInfoDatabase.addListenerForSingleValueEvent(valueEventListener);
 
         changepass=findViewById(R.id.btn_changepass);
-        deleteaccount=findViewById(R.id.btn_deleteaccount);
+//        deleteaccount=findViewById(R.id.btn_deleteaccount);
 
         changepass.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -74,45 +74,45 @@ public class Profile extends AppCompatActivity {
             }
         });
 
-        deleteaccount.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                AlertDialog.Builder dialog=new AlertDialog.Builder(Profile.this);
-                dialog.setTitle("Are you sure?");
-                dialog.setMessage("Deleting this account will result in completely removing your account from Spendee and you will no longer be able to access this account. " +
-                        "In future if you wish to use the same email then you need to register again.");
-                dialog.setPositiveButton("DELETE", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        mUser.delete().addOnCompleteListener(new OnCompleteListener<Void>() {
-                            @Override
-                            public void onComplete(@NonNull Task<Void> task) {
-                                if(task.isSuccessful())
-                                {
-                                    Toast.makeText(Profile.this,"Account Deleted Successfully..",Toast.LENGTH_LONG).show();
-                                    Intent intent=new Intent(Profile.this,home_screen.class);
-                                    intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                                    intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
-                                    startActivity(intent);
-                                }
-                                else
-                                {
-                                    Toast.makeText(Profile.this,task.getException().getMessage(),Toast.LENGTH_LONG).show();
-                                }
-                            }
-                        });
-                    }
-                });
-                dialog.setNegativeButton("NO", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        dialog.dismiss();
-                    }
-                });
-                AlertDialog alertDialog=dialog.create();
-                alertDialog.show();
-            }
-        });
+//        deleteaccount.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                AlertDialog.Builder dialog=new AlertDialog.Builder(Profile.this);
+//                dialog.setTitle("Are you sure?");
+//                dialog.setMessage("Deleting this account will result in completely removing your account from Spendee and you will no longer be able to access this account. " +
+//                        "In future if you wish to use the same email then you need to register again.");
+//                dialog.setPositiveButton("DELETE", new DialogInterface.OnClickListener() {
+//                    @Override
+//                    public void onClick(DialogInterface dialog, int which) {
+//                        mUser.delete().addOnCompleteListener(new OnCompleteListener<Void>() {
+//                            @Override
+//                            public void onComplete(@NonNull Task<Void> task) {
+//                                if(task.isSuccessful())
+//                                {
+//                                    Toast.makeText(Profile.this,"Account Deleted Successfully..",Toast.LENGTH_LONG).show();
+//                                    Intent intent=new Intent(Profile.this,home_screen.class);
+//                                    intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+//                                    intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+//                                    startActivity(intent);
+//                                }
+//                                else
+//                                {
+//                                    Toast.makeText(Profile.this,task.getException().getMessage(),Toast.LENGTH_LONG).show();
+//                                }
+//                            }
+//                        });
+//                    }
+//                });
+//                dialog.setNegativeButton("NO", new DialogInterface.OnClickListener() {
+//                    @Override
+//                    public void onClick(DialogInterface dialog, int which) {
+//                        dialog.dismiss();
+//                    }
+//                });
+//                AlertDialog alertDialog=dialog.create();
+//                alertDialog.show();
+//            }
+//        });
 
         ImageView back_arrow=findViewById(R.id.back);
         back_arrow.setOnClickListener(new View.OnClickListener() {

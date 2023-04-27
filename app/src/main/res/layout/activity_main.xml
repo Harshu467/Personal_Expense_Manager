@@ -43,7 +43,7 @@
         android:paddingEnd="4dp"
 
         tools:listitem="@layout/overview_balance_card"
-        tools:itemCount="2"
+        tools:itemCount="1"
         android:orientation="horizontal"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
 
@@ -71,6 +71,61 @@
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
             android:textAppearance="?attr/textAppearanceOverline" />
+
+        <com.google.android.material.card.MaterialCardView
+                android:id="@+id/Pending_Payment_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_marginTop="4dp"
+                app:cardCornerRadius="0dp">
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingHorizontal="16dp"
+                    android:paddingVertical="12dp">
+                <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_final_statement_icon" />
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pending_payment"
+                        android:layout_marginStart="12dp"
+                        android:layout_gravity="center"
+                        android:textAppearance="?attr/textAppearanceBody1" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+                android:id="@+id/analytics_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardCornerRadius="0dp">
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingHorizontal="16dp"
+                    android:paddingVertical="12dp">
+                <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_trial_balance_icon" />
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/analytics_balance"
+                        android:layout_marginStart="12dp"
+                        android:layout_gravity="center"
+                        android:textAppearance="?attr/textAppearanceBody1" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
 
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/final_statement_button"

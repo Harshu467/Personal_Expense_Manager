@@ -134,10 +134,11 @@
     <string name="select_ledger">Select Ledger</string>
     <string name="settings">Settings</string>
     <string name="setup">Setup</string>
+    <string name="pending_payment">Pending Payment</string>
     <string name="overview_section">Overview</string>
     <string name="statement_section">Statements</string>
     <string name="trial_balance">Trial Balance</string>
-    <string name="made_in_india">Made with ❤️ in India</string>
+    <string name="analytics_balance">Analytics View</string>
 
     <string-array name="ledger_types">
         <item>Revenue Account</item>

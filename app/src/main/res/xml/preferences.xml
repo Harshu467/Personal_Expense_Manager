@@ -90,29 +90,6 @@
             app:useSimpleSummaryProvider="true"/>
     </PreferenceCategory>
 
-    <PreferenceCategory
-        app:icon="@drawable/ic_info"
-        app:title="@string/info_pref_category">
-
-        <Preference
-            app:title="@string/build_version_label"
-            app:summary="@string/build_version"/>
-
-        <Preference
-            app:title="@string/developer_label"
-            app:summary="@string/developer_github_label"/>
-
-    </PreferenceCategory>
-
-    <PreferenceCategory
-        app:icon="@drawable/ic_warning"
-        app:title="@string/action_pref_category">
-        <Preference
-            app:title="@string/send_feedback_label"
-            app:summary="@string/send_feedback_summary"/>
-        <Preference
-            app:title="@string/reset_books"/>
-    </PreferenceCategory>
 
 
 </PreferenceScreen>

@@ -1,44 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <com.google.android.material.card.MaterialCardView
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="224dp"
-    android:layout_height="152dp"
-    android:layout_marginStart="4dp"
-    android:layout_marginEnd="20dp"
-    android:layout_marginTop="20dp"
-    android:layout_marginBottom="24dp"
-    android:backgroundTint="?attr/colorPrimary"
-    app:cardCornerRadius="28dp"
-    app:cardElevation="16dp"
-    style="@style/CardView.DarkModeBorder">
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="?attr/colorPrimary"
+        app:cardCornerRadius="28dp"
+        app:cardElevation="16dp"
+        style="@style/CardView.DarkModeBorder">
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:gravity="center_vertical"
-        android:padding="24dp">
+            android:layout_width="378dp"
+            android:layout_height="177dp"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:padding="24dp">
         <TextView
-            android:id="@+id/balanceView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Rs.50,000"
-            android:ellipsize="end"
-            android:maxLines="1"
-            android:textColor="?attr/colorOnPrimary"
-            android:textAppearance="?attr/textAppearanceHeadline4"/>
+                android:id="@+id/balanceView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rs.50,000"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="?attr/colorOnPrimary"
+                android:textAppearance="?attr/textAppearanceHeadline4"/>
         <TextView
-            android:id="@+id/categoryView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="Pocket Money"
-            android:ellipsize="end"
-            android:maxLines="1"
-            android:textColor="?attr/colorOnPrimary"
-            android:textAppearance="?attr/textAppearanceBody2"/>
+                android:id="@+id/categoryView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Pocket Money"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="?attr/colorOnPrimary"
+                android:textAppearance="?attr/textAppearanceBody2"/>
     </LinearLayout>
 
 </com.google.android.material.card.MaterialCardView>
